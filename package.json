@@ -1,0 +1,11 @@
+{
+  "name": "facebook_replica",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./utils/scss/styles.scss ./utils/css/styles.css"
+  },
+  "author": "joeldev",
+  "license": "ISC"
+}

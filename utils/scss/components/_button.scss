@@ -1,0 +1,46 @@
+%button_size {
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+button {
+    @extend %button_size;
+    background-color: $blue;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#signup {
+    width: 50%;
+    background-color: $green;
+}
+
+#signup:hover{
+    background-color: darken($color: $green, $amount: 5)
+}
+
+button:hover{
+    background-color: darken($color: $blue, $amount: 5)
+}
+
+input {
+    @extend %button_size;
+    border: 1px solid $gray;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+input::placeholder{
+    color: $gray;
+}
+
+input:focus{
+    outline: none;
+    border: 1px lighten($color: $blue, $amount: 10) solid;
+}

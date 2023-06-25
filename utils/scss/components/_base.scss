@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: 'Voces', cursive;
+}
+
+body{
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    background-color: $background;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8vw;
+}
+
+section{
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#section1{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    padding-top: 160px;
+}
+
+#section2 {
+    padding: 60px;
+    @extend #section1;
+    align-items: center; 
+    justify-content: center;
+}
+
